@@ -56,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
 
                 User user = db.getUser(email, password);
                 if (user != null) {
-                    Intent i = new Intent(MainActivity.this, HomeActivity.class);
+                    Intent i = new Intent(MainActivity.this, POIAdd.class);
                     i.putExtra("User", user);
                     startActivity(i);
                     finish();
                 }else{
-                    Toast.makeText(MainActivity.this, "Unregistered user, or incorrect", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Unregistered user or incorrect", Toast.LENGTH_SHORT).show();
                 }
             }
         });

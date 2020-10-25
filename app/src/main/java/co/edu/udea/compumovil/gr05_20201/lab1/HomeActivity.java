@@ -12,18 +12,18 @@ import co.edu.udea.compumovil.gr05_20201.lab1.data.IComunicationFragments;
 import co.edu.udea.compumovil.gr05_20201.lab1.model.POI;
 import co.edu.udea.compumovil.gr05_20201.lab1.R;
 import co.edu.udea.compumovil.gr05_20201.lab1.POIAdd;
-//import co.edu.udea.compumovil.gr05_20201.lab1.View.Main.POI.POIDetails;
+import co.edu.udea.compumovil.gr05_20201.lab1.POIDetail;
 import co.edu.udea.compumovil.gr05_20201.lab1.POIList;
-//import co.edu.udea.compumovil.gr05_20201.lab1.View.Main.Settings.SettingsFragment;
+import co.edu.udea.compumovil.gr05_20201.lab1.Settings;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener, IComunicationFragments {
 
     private Button btList,btAdd, btSettings;
     private FragmentTransaction transaction;
-    private Fragment list, add,details,settings;
+    private Fragment list, add, details, settings;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -64,7 +64,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void sendPOI(POI poi) {
-        details = new POIDetails();
+        details = new POIDetail();
         Bundle bundleSender = new Bundle();
         bundleSender.putSerializable("Object",poi);
         details.setArguments(bundleSender);
