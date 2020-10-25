@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".POIAdd">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fpa_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fpa_name" />
+
+        <EditText
+            android:id="@+id/fpa_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/fpa_tv_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fpa_information" />
+
+        <EditText
+            android:id="@+id/fpa_et_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/fpa_tv_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fpa_temperature" />
+
+        <EditText
+            android:id="@+id/fpa_et_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/fpa_tv_recomendation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fpa_recomendation" />
+
+        <EditText
+            android:id="@+id/fpa_et_recomendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fpa_address" />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/fpa_tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fpa_score" />
+
+        <EditText
+            android:id="@+id/fpa_et_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/fpa_tv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ruta de la imagen seleccionada" />
+
+        <Button
+            android:id="@+id/fpa_bt_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fpa_image" />
+        <Button
+            android:id="@+id/fpa_bt_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addplace" />
+    </LinearLayout>
+
+</FrameLayout>

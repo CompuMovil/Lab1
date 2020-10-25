@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Lab1Activities</string>
+
+
+    <string name="sa_logout">Cerrar sesión</string>
+    <string name="sa_notifications">Activar notficaciones</string>
+    <string name="sa_sound">Activar sonido</string>
+
+    <string name="fpa_name">Nombre del lugar</string>
+    <string name="fpa_information">Información del lugar</string>
+<string name="fpa_temperature">Temperatura </string>
+<string name="fpa_recomendation">Recomendaciones sobre el lugar</string>
+<string name="fpa_address">Direccion Lugar</string>
+<string name="fpa_score">Puntuación del lugar </string>
+<string name="fpa_image">Agregar imagen del lugar</string>
+<string name="addplace">Agregar Lugar</string>
+
+    <string name="place_name">Nombre del lugar</string>
+    <string name="place_info">Información del lugar</string>
+    <string name="place_score">Puntuación del lugar</string>
+
+
 </resources>

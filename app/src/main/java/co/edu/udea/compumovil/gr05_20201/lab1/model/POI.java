@@ -1,12 +1,13 @@
-package co.edu.udea.compumovil.gr05_20201.lab1.data;
+package co.edu.udea.compumovil.gr05_20201.lab1.model;
 
 
 import androidx.room.ColumnInfo;
+import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
-public class POI implements Serializable {
+@Entity  public class POI implements Serializable {
     @PrimaryKey(autoGenerate = true)
     public int id;
     @ColumnInfo(name = "name")
@@ -21,29 +22,17 @@ public class POI implements Serializable {
     public String image;
     @ColumnInfo(name = "address")
     public String address;
-    @ColumnInfo(name = "currency")
-    public String currency;
-    @ColumnInfo(name = "city")
-    public String city;
-    @ColumnInfo(name = "country")
-    public String country;
-    @ColumnInfo(name = "description")
-    public String description;
     @ColumnInfo(name = "score")
     public String score;
 
 
-    public POI(String name, String information, String temperature, String image, String address, String city, String score, String currency, String recommendation, String country, String description) {
+    public POI(String name, String information, String temperature, String image, String address , String score, String recommendation) {
         this.name = name;
         this.information = information;
         this.temperature = temperature;
-        this.currency = currency;
         this.recommendation = recommendation;
         this.image = image;
         this.address = address;
-        this.city = city;
-        this.country = country;
-        this.description = description;
         this.score = score;
     }
 
@@ -73,21 +62,11 @@ public class POI implements Serializable {
 
     public String getTemperature() {
         return temperature;
-    }   
+    }
 
     public void setTemperature(String temperature) {
         this.temperature = temperature;
     }
-
-
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
-    }
-
 
     public String getRecommendation() {
         return recommendation;
@@ -113,30 +92,6 @@ public class POI implements Serializable {
         this.address = address;
     }
 
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getScore() {
         return score;
     }
@@ -144,5 +99,4 @@ public class POI implements Serializable {
     public void setScore(String score) {
         this.score = score;
     }
-
 }
