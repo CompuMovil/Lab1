@@ -18,7 +18,7 @@ import co.edu.udea.compumovil.gr05_20201.lab1.data.UserDataBase;
 import co.edu.udea.compumovil.gr05_20201.lab1.model.POI;
 import co.edu.udea.compumovil.gr05_20201.lab1.model.User;
 
-public class activity_add_DAO extends AppCompatActivity {
+public class activity_add_DAO extends  {
 
 
     EditText editTextPOIName, editTextPOIInformation, editTextPOITemperature, editTextPOIRecomendation, editTextPOIImage
@@ -65,7 +65,7 @@ public class activity_add_DAO extends AppCompatActivity {
                 String POIScore = editTextPOIScore.getText().toString().trim();
 
 
-                    POI poi = new POI(POIName, POIInformation, POITemperature, POIRecomendation, POIImage, POIAddress, POICurrency,
+                    POI poi = new POI(String POIName, String POIInformation, String POITemperature, POIRecomendation, POIImage, POIAddress, POICurrency,
                             POICity, POICountry, POIDescription, POIScore);
                     poiDAO.insert(poi);
 

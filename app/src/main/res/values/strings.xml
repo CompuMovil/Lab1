@@ -8,16 +8,31 @@
 
     <string name="fpa_name">Nombre del lugar</string>
     <string name="fpa_information">Información del lugar</string>
-<string name="fpa_temperature">Temperatura </string>
-<string name="fpa_recomendation">Recomendaciones sobre el lugar</string>
-<string name="fpa_address">Direccion Lugar</string>
-<string name="fpa_score">Puntuación del lugar </string>
-<string name="fpa_image">Agregar imagen del lugar</string>
-<string name="addplace">Agregar Lugar</string>
+    <string name="fpa_temperature">Temperatura </string>
+    <string name="fpa_recomendation">Recomendaciones sobre el lugar</string>
+    <string name="fpa_address">Direccion Lugar</string>
+    <string name="fpa_score">Puntuación del lugar </string>
+    <string name="fpa_image">Agregar imagen del lugar</string>
+    <string name="addplace">Agregar Lugar</string>
 
     <string name="place_name">Nombre del lugar</string>
     <string name="place_info">Información del lugar</string>
     <string name="place_score">Puntuación del lugar</string>
+
+    <!--- Strings de config-->
+    <string name="signature">Signature</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="sync_header">Sync</string>
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="messages_header">Configuration</string>
+
+
+
+
+
 
 
 </resources>
