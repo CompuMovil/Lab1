@@ -136,3 +136,4 @@ public class POIAdd extends Fragment implements View.OnClickListener {
         }
     }
 }
+

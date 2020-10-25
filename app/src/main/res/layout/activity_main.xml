@@ -2,7 +2,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    android:background="@drawable/loginbg">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Bienvenido"
+        android:textColor="#464E45"
+        android:textSize="36sp" />
 
 
     <LinearLayout
@@ -11,22 +22,13 @@
         android:layout_above="@id/input_group"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="25dp"
+        android:layout_marginTop="39dp"
         android:layout_marginRight="25dp"
+        android:layout_marginBottom="-39dp"
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="SIGN IN"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
-
-
-
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/input_group"
@@ -47,7 +49,9 @@
             android:background="@drawable/edit_text_top"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:textColor="#464E45"
+            android:textColorHint="#464E45" />
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -56,8 +60,9 @@
             android:background="@drawable/edit_text_bottom"
             android:hint="Password"
             android:inputType="textPassword"
-            android:padding="15dp" />
-
+            android:padding="15dp"
+            android:textColor="#464E45"
+            android:textColorHint="#464E45" />
 
         <Button
             android:id="@+id/buttonLogin"
