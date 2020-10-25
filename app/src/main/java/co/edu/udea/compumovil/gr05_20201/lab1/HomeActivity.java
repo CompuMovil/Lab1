@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import co.edu.udea.compumovil.gr05_20201.lab1.data.IComunicationFragments;
 import co.edu.udea.compumovil.gr05_20201.lab1.model.POI;
+
 import co.edu.udea.compumovil.gr05_20201.lab1.R;
 import co.edu.udea.compumovil.gr05_20201.lab1.POIAdd;
 import co.edu.udea.compumovil.gr05_20201.lab1.POIDetail;
@@ -23,9 +24,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private Fragment list, add, details, settings;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
 
         list = new POIList();
         add = new POIAdd();
