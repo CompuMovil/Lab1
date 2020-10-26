@@ -93,17 +93,20 @@
             android:id="@+id/fpa_tv_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ruta de la imagen seleccionada" />
+            android:text="Ruta de la imagen seleccionada: " />
 
         <Button
             android:id="@+id/fpa_bt_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#F0BE54"
             android:text="@string/fpa_image" />
+
         <Button
             android:id="@+id/fpa_bt_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#5E9FA3"
             android:text="@string/add_place" />
     </LinearLayout>
 

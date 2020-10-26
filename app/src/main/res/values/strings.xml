@@ -10,8 +10,8 @@
     <string name="fpa_recomendation">Recomendaciones sobre el lugar:</string>
     <string name="fpa_address">Direccion Lugar:</string>
     <string name="fpa_score">Puntuación del lugar:</string>
-    <string name="fpa_image">Agregar imagen del lugar:</string>
-    <string name="add_place">Agregar lugar:</string>
+    <string name="fpa_image">Añadir imagen</string>
+    <string name="add_place">Agregar lugar</string>
 
     <string name="place_name">Nombre del lugar:</string>
     <string name="place_info">Información del lugar:</string>
