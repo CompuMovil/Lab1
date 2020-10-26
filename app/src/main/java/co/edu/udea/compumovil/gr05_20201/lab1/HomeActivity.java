@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 
 import co.edu.udea.compumovil.gr05_20201.lab1.data.IComunicationFragments;
@@ -23,9 +22,10 @@ import co.edu.udea.compumovil.gr05_20201.lab1.Settings;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener, IComunicationFragments {
 
-    private Button btList,btAdd, btSettings;
+    private Button btList, btSettings;
     private FragmentTransaction transaction;
     private Fragment list, add, details, settings;
+    private FloatingActionButton icAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +35,12 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         list = new POIList();
         add = new POIAdd();
         settings = new Settings();
-        btList = findViewById(R.id.ma_bt_list);
-        btAdd = findViewById(R.id.ma_bt_add);
-        btSettings = findViewById(R.id.ma_bt_settings);
+        btList = findViewById(R.id.home_bt_list);
+        icAdd = findViewById(R.id.home_ic_add);
+        btSettings = findViewById(R.id.home_bt_settings);
 
         btList.setOnClickListener(this);
-        btAdd.setOnClickListener(this);
+        icAdd.setOnClickListener(this);
         btSettings.setOnClickListener(this);
 
         getSupportFragmentManager().beginTransaction().add(R.id.ma_f_container,list).commit();
@@ -50,15 +50,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         transaction = getSupportFragmentManager().beginTransaction();
         switch (view.getId()){
-            case R.id.ma_bt_list:
+            case R.id.home_bt_list:
                 transaction.replace(R.id.ma_f_container,list);
                 transaction.addToBackStack(null);
                 break;
-            case R.id.ma_bt_add:
+            case R.id.home_ic_add:
                 transaction.replace(R.id.ma_f_container,add);
                 transaction.addToBackStack(null);
                 break;
-            case R.id.ma_bt_settings:
+            case R.id.home_bt_settings:
                 transaction.replace(R.id.ma_f_container,settings);
                 transaction.addToBackStack(null);
                 break;
