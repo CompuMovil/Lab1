@@ -8,6 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
+
 import co.edu.udea.compumovil.gr05_20201.lab1.data.IComunicationFragments;
 import co.edu.udea.compumovil.gr05_20201.lab1.model.POI;
 
