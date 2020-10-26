@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#2B2B2B"
+            android:backgroundTint="#4a99a4"
             android:text="Lista de sitios" />
 
         <Button
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#B21031EF"
+            android:backgroundTint="#4a99a4"
             android:text="Agregar sitio" />
 
         <Button
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#B21031EF"
+            android:backgroundTint="#4a99a4"
             android:text="Configuraciones" />
     </LinearLayout>
 
