@@ -17,6 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#2B2B2B"
             android:text="Lista de sitios" />
 
         <Button
@@ -24,6 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#B21031EF"
             android:text="Agregar sitio" />
 
         <Button
@@ -31,12 +33,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#B21031EF"
             android:text="Configuraciones" />
     </LinearLayout>
 
     <FrameLayout
         android:id="@+id/ma_f_container"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:layout_height="match_parent"/>
+        android:background="@drawable/defaultbg" />
 </LinearLayout>
