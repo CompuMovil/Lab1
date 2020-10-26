@@ -3,11 +3,6 @@ package co.edu.udea.compumovil.gr05_20201.lab1;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.room.Room;
-
 import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,15 +12,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.room.Room;
+
 import java.io.File;
-import java.net.URI;
 
 import co.edu.udea.compumovil.gr05_20201.lab1.data.POIDataBase;
-import co.edu.udea.compumovil.gr05_20201.lab1.data.UserDataBase;
 import co.edu.udea.compumovil.gr05_20201.lab1.model.POI;
-import co.edu.udea.compumovil.gr05_20201.lab1.model.User;
-import co.edu.udea.compumovil.gr05_20201.lab1.R;
-import co.edu.udea.compumovil.gr05_20201.lab1.RegisterActivity;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -95,8 +89,8 @@ public class POIAdd extends Fragment implements View.OnClickListener {
         placetemp = vista.findViewById(R.id.fpa_et_temperature);
         placerecomend = vista.findViewById(R.id.fpa_et_recomendation);
         placeaddress = vista.findViewById(R.id.et_address);
-
         placescore = vista.findViewById(R.id.fpa_et_score);
+
         addplace.setOnClickListener(this);
         selectImage.setOnClickListener(this);
         return vista;
@@ -108,13 +102,13 @@ public class POIAdd extends Fragment implements View.OnClickListener {
             case R.id.fpa_bt_add:
                 POIDataBase db = Room.databaseBuilder(vista.getContext(),
                         POIDataBase.class, "database-name").allowMainThreadQueries().build();
-                POI poi = new POI(placename.getText().toString(),placeinfo.getText().toString(),placetemp.getText().toString(),placerecomend.getText().toString(),imagePath.getText().toString(),placeaddress.getText().toString(), placescore.getText().toString());
+                POI poi = new POI(placename.getText().toString(),placeinfo.getText().toString(),placetemp.getText().toString(),placerecomend.getText().toString(),placeaddress.getText().toString(), placescore.getText().toString(),imagePath.getText().toString());
                 Long reg = db.poiDAO().insert(poi);
-                Toast.makeText(getContext(),"Poi agregado",Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(),"Lugar agregado exitosamente",Toast.LENGTH_LONG).show();
                 break;
             case R.id.fpa_bt_image:
                 takeImagePath();
-                Toast.makeText(getContext(),"Ruta de imagen seleccionada",Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(),"Busca tu imagen",Toast.LENGTH_LONG).show();
                 break;
         }
 
@@ -123,7 +117,7 @@ public class POIAdd extends Fragment implements View.OnClickListener {
     private void takeImagePath() {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         intent.setType("image/");
-        startActivityForResult(intent.createChooser(intent,"Seleccione el origen"),10);
+        startActivityForResult(intent.createChooser(intent,"Seleccione la dirección"),10);
     }
 
     @Override

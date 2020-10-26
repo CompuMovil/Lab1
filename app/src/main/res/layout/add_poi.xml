@@ -74,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/fpa_tv_score"
@@ -104,7 +104,7 @@
             android:id="@+id/fpa_bt_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/addplace" />
+            android:text="@string/add_place" />
     </LinearLayout>
 
 </FrameLayout>

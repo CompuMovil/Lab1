@@ -9,10 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import co.edu.udea.compumovil.gr05_20201.lab1.model.POI;
 import co.edu.udea.compumovil.gr05_20201.lab1.R;
 
 public class POIAdapter extends RecyclerView.Adapter<POIAdapter.ViewHolderPOIInfo> implements View.OnClickListener{

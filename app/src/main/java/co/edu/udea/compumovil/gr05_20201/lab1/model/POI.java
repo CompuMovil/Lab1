@@ -26,7 +26,7 @@ import java.io.Serializable;
     public String score;
 
 
-    public POI(String name, String information, String temperature, String image, String address , String score, String recommendation) {
+    public POI(String name, String information, String temperature, String recommendation, String address, String score, String image) {
         this.name = name;
         this.information = information;
         this.temperature = temperature;

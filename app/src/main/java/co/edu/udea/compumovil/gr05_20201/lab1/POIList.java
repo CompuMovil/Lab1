@@ -3,8 +3,11 @@ package co.edu.udea.compumovil.gr05_20201.lab1;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -12,22 +15,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.List;
 
-import co.edu.udea.compumovil.gr05_20201.lab1.data.POIDataBase;
 import co.edu.udea.compumovil.gr05_20201.lab1.data.IComunicationFragments;
-import co.edu.udea.compumovil.gr05_20201.lab1.model.POIAdapter;
+import co.edu.udea.compumovil.gr05_20201.lab1.data.POIDataBase;
 import co.edu.udea.compumovil.gr05_20201.lab1.model.POI;
-import co.edu.udea.compumovil.gr05_20201.lab1.model.User;
-import co.edu.udea.compumovil.gr05_20201.lab1.R;
+import co.edu.udea.compumovil.gr05_20201.lab1.model.POIAdapter;
 
 
 public class POIList extends Fragment {

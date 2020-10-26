@@ -1,31 +1,24 @@
 package co.edu.udea.compumovil.gr05_20201.lab1;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import co.edu.udea.compumovil.gr05_20201.lab1.data.IComunicationFragments;
 import co.edu.udea.compumovil.gr05_20201.lab1.model.POI;
 
-import co.edu.udea.compumovil.gr05_20201.lab1.R;
-import co.edu.udea.compumovil.gr05_20201.lab1.POIAdd;
-import co.edu.udea.compumovil.gr05_20201.lab1.POIDetail;
-import co.edu.udea.compumovil.gr05_20201.lab1.POIList;
-import co.edu.udea.compumovil.gr05_20201.lab1.Settings;
-
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener, IComunicationFragments {
 
-    private Button btList, btSettings;
+    private Button btList;
     private FragmentTransaction transaction;
     private Fragment list, add, details, settings;
-    private FloatingActionButton icAdd;
+    private FloatingActionButton icAdd, icSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +30,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         settings = new Settings();
         btList = findViewById(R.id.home_bt_list);
         icAdd = findViewById(R.id.home_ic_add);
-        btSettings = findViewById(R.id.home_bt_settings);
+        icSettings = findViewById(R.id.home_bt_settings);
 
         btList.setOnClickListener(this);
         icAdd.setOnClickListener(this);
-        btSettings.setOnClickListener(this);
+        icSettings.setOnClickListener(this);
 
         getSupportFragmentManager().beginTransaction().add(R.id.ma_f_container,list).commit();
     }

@@ -2,7 +2,7 @@ package co.edu.udea.compumovil.gr05_20201.lab1;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).

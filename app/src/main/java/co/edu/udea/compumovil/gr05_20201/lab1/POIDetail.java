@@ -1,14 +1,12 @@
 package co.edu.udea.compumovil.gr05_20201.lab1;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import co.edu.udea.compumovil.gr05_20201.lab1.model.POI;
 
@@ -19,8 +17,8 @@ import co.edu.udea.compumovil.gr05_20201.lab1.model.POI;
  */
 public class POIDetail extends Fragment {
 
-    TextView id,name,temperature;
-    Button btn;
+    TextView id,place_name,place_temperature, place_address, place_recommend,place_info,place_score;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -67,17 +65,25 @@ public class POIDetail extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View vista = inflater.inflate(R.layout.poi_detail, container, false);
-        id = vista.findViewById(R.id.pd_tv_id);
-        name = vista.findViewById(R.id.pd_tv_name);
-        temperature = vista.findViewById(R.id.pd_tv_temperature);
+        place_name = vista.findViewById(R.id.fpa_et_name);
+        place_temperature = vista.findViewById(R.id.fpa_et_temperature);
+        place_info = vista.findViewById(R.id.fpa_et_information);
+        place_address = vista.findViewById(R.id.et_address);
+        place_recommend = vista.findViewById(R.id.fpa_et_recomendation);
+        place_score = vista.findViewById(R.id.fpa_et_score);
+
 
         Bundle bundleGetter = getArguments();
         POI poi = null;
         if(bundleGetter != null){
             poi = (POI) bundleGetter.getSerializable("Object");
             //id.setText(poi.getId());
-            name.setText(poi.getName());
-            temperature.setText(poi.getTemperature());
+            place_name.setText(poi.getName());
+            place_temperature.setText(poi.getTemperature());
+            place_info.setText(poi.getInformation());
+            place_address.setText(poi.getAddress());
+            place_recommend.setText(poi.getRecommendation());
+            place_score.setText(poi.getScore());
         }
 
         return vista;

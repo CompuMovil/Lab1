@@ -1,8 +1,5 @@
 package co.edu.udea.compumovil.gr05_20201.lab1;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +7,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import co.edu.udea.compumovil.gr05_20201.lab1.data.UserDAO;
 import co.edu.udea.compumovil.gr05_20201.lab1.data.UserDataBase;

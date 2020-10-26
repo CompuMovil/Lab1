@@ -21,13 +21,17 @@
             android:text="Lista de sitios" />
 
 
-        <Button
+        <!--<Button
             android:id="@+id/home_bt_settings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#4a99a4"
             android:text="Configuraciones" />
+            -->
+
+
+
     </LinearLayout>
 
 
@@ -39,11 +43,21 @@
         android:background="@drawable/defaultbg">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/home_bt_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/pref_margin"
+            app:backgroundTint="#633C7A"
+            app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/home_ic_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/fab_margin"
+            android:layout_margin="@dimen/add_margin"
+            app:backgroundTint="#633C7A"
             app:srcCompat="@android:drawable/ic_input_add" />
     </FrameLayout>
 
